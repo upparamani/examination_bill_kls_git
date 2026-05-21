@@ -1,0 +1,14 @@
+{
+  "name": "exam-bills-kls-git",
+  "version": "1.0.0",
+  "description": "Examination Bills Management - KLS GIT ISE Department",
+  "author": "Prof. Pandurang Upparamani <upparamani@git.edu>",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "cordova": "^12.0.0"
+  },
+  "cordova": {
+    "platforms": []
+  }
+}

@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.klsgit.ise.exambills" version="1.0.0"
+    xmlns="http://www.w3.org/ns/widgets"
+    xmlns:cdv="http://cordova.apache.org/ns/1.0">
+
+    <name>Exam Bills KLS GIT</name>
+    <description>Examination Bills Management - KLS GIT ISE Department</description>
+    <author email="upparamani@git.edu" href="https://panlabs26.github.io">
+        Prof. Pandurang Upparamani
+    </author>
+
+    <content src="index.html" />
+
+    <!-- Allow all network access (needed for Tailwind + Lucide CDNs) -->
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-navigation href="*" />
+
+    <!-- Android preferences -->
+    <preference name="android-minSdkVersion"    value="22" />
+    <preference name="android-targetSdkVersion" value="34" />
+    <preference name="Orientation"              value="portrait" />
+    <preference name="DisallowOverscroll"       value="true" />
+    <preference name="BackgroundColor"          value="0xff1e3a5f" />
+    <preference name="StatusBarOverlaysWebView" value="false" />
+    <preference name="StatusBarStyle"           value="lightcontent" />
+    <preference name="SplashScreenDelay"        value="0" />
+
+    <!-- iOS preferences -->
+    <preference name="AllowInlineMediaPlayback" value="true" />
+    <preference name="EnableViewportScale"      value="false" />
+
+    <platform name="android">
+        <allow-intent href="market:*" />
+    </platform>
+
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform>
+
+</widget>
