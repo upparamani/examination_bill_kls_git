@@ -37,7 +37,17 @@ jobs:
         run: npm install
 
       - name: Add Android platform
-        run: cordova platform add android@11
+        run: cordova platform add android@12
+
+      - name: Patch appcompat to fix resource compilation
+        run: |
+          cat > platforms/android/app/build-extras.gradle << 'EOF'
+          configurations.all {
+              resolutionStrategy {
+                  force "androidx.appcompat:appcompat:1.7.0"
+              }
+          }
+          EOF
 
       - name: Build APK (debug)
         run: cordova build android --debug
