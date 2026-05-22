@@ -37,10 +37,11 @@ jobs:
         run: npm install
 
       - name: Add Android platform
-        run: cordova platform add android@12
+        run: cordova platform add android@13
 
       - name: Patch appcompat to fix resource compilation
         run: |
+          mkdir -p platforms/android/app
           cat > platforms/android/app/build-extras.gradle << 'EOF'
           configurations.all {
               resolutionStrategy {
